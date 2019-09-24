@@ -1,0 +1,211 @@
+body {
+    height: 5000px;
+}
+* {
+    box-sizing: border-box;
+}
+.house__wollrelative {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+.house__roofrelative {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid brown;
+}
+.windowsrelative {
+    position: relative;
+    margin: 20px 15px 0;
+}
+.woll__windowrelative1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: aqua;   
+}
+.woll__windowrelative2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    left: 115px;
+    top: -49px;
+    margin-left: 15px;
+    background-color: aqua;  
+}
+.doorrelative {
+    position: relative;
+}
+.woll__doorrelative {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    border: 2px solid black;
+    top: -22px;
+    left: 72px;
+    background-color: brown;
+}
+.house__wollapsolute {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: -2px;
+    margin-top: 100px; 
+}
+.house__roofapsolute {
+    margin-left: -2px;
+    margin-top: 0px; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid brown;
+}
+.windowsapsolute {
+    position: absolute;
+    margin: 20px 15px 0;
+}
+.woll__windowapsolute1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+.woll__windowapsolute2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    left: 115px;
+    top: 1px;
+    background-color: aqua;
+}
+.doorapsolute {
+    position: absolute;
+}
+.woll__doorapsolute {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    border: 2px solid black;
+    left: 58px;
+    top: 78px;
+    background-color: brown;    
+}
+/* house fixed */
+.house__wollfixed {
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: 210px;
+    margin-top: -200px; 
+    bottom: 0;
+    top: 308px;
+    left: 20px;
+}
+.house__rooffixed {
+    margin-left: 12px;
+    margin-top: -300px;
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid brown;
+    top: 308px;
+    left: 218px;
+}
+.woll__windowfixed1 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    top: 131px;
+    left: 249px;
+    background-color: aqua;
+}
+.woll__windowfixed2 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    top: 131px;
+    left: 361px;
+    background-color: aqua;
+}
+.doorfixed {
+    position: fixed;
+}
+.woll__doorfixed {
+    position: fixed;
+    width: 50px;
+    height: 100px;
+    border: 2px solid black;
+    left: 307px;
+    top: 208px;
+    background-color: brown;
+}
+.door__hendlfixed {
+    position: fixed;
+    width: 5px; 
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+    margin: 50px 0 0 41px;
+}
+/* house static */
+.house__wollstatic {
+    position: static;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: -2px 0px 0px 205px;
+}
+.house__roofstatic {
+    margin: -121px 0px 0px 205px;
+    position: static;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid brown;
+}
+.woll__windowstatic1 {
+    position: static;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 20px 0px 0px 15px;
+    background-color: aqua;
+}
+.woll__windowstatic2 {
+    position: static;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: -49px 0px 27px 131px;
+    background-color: aqua;
+}
+.doorstatic {
+    position: static;
+}
+.woll__doorstatic {
+    position: static;
+    width: 50px;
+    height: 100px;
+    border: 2px solid black;
+    margin-left: 74px;
+    background-color: brown;
+}
