@@ -1,0 +1,41 @@
+.dom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.dom__roof {
+    width: 0;
+    height: 0;
+    border-left: 253px solid transparent;
+    border-right: 253px solid transparent;
+    border-bottom: 300px solid goldenrod;
+}
+.dom__wall {
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    background: brown;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wall__windows {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.window {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background: blue;
+}
+.wall__door {
+    margin-top: 141px;
+    width: 100px;
+    height: 200px;
+    border: 3px solid black;
+    background: goldenrod;
+}
