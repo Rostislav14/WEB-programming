@@ -1,0 +1,17 @@
+.left-box {
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 100px 100px 100px 100px;
+	border-top:100px 
+	height: 0px;
+	width: 0px
+	position:absolute;
+ 
+}.write-box{
+	border-color: transparent black;
+	border-style: solid;
+	border-width: 100px 100px 100px 100px;
+	border-top:100px 
+	height: 0px;
+	width: 0px;
+}
