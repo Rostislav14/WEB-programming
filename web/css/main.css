@@ -1,103 +1,230 @@
-
-
 * {
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-.header {
+.wrapper {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background: #c9c9c9;
 }
 
 .head {
-  font-family: sans-serif;
-  color: #d7794a;
-}
-
-.head__line {
+  /* Style for "neonbrand-" */
+  position: relative;
   width: 100%;
-  height: 121px;
-  background: #fff;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 121px;
-}
-
-.head__line span {
-  opacity: 0.71;
-}
-
-.head__line span {
-  margin-left: 63px;
-}
-
-.head__welcome {
-  width: 100%;
-  height: calc(100vh - 121px);
-  background-image: url(../img/StockSnap_9NCMFEISLF.jpg);
+  min-height: 669px;
+  background-image: url(../img/neonbrand-570373-unsplash.webp);
+  -webkit-background-size: cover;
   background-size: cover;
-  font-family: sans-serif;
+  background-position: center;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.head:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-image: linear-gradient(to top, #00f1ff 0%, #00a8b2 100%);
+  opacity: 0.7;
+  
+}
+
+.logoContainer {
+  width: 331px;
+  height: 270px;
   display: flex;
   flex-direction: column;
 }
-
-.head__menu__wrap {
-  flex: 1 1 auto;
+.logoContainer .logo {
+  align-self: center;
+  margin-bottom: 55px;
+}
+.logoContainer .undertext {
+  width: 350px;
+  height: 88px;
+  color: #333333;
+  font-family: "Catamaran", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 3.6px;
+  text-align: center;
 }
 
-.head__menu {
-  width: 100%;
-  height: 77px;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.menu {
+.registration_form {
+  width: 377px;
+  height: 422px;
+  box-shadow: 0 6px 6px 1px rgba(44, 43, 45, 0.7);
+  background-color: #333333;
+  opacity: 0.9;
   display: flex;
-  width: 742px;
-  flex-direction: row;
-  margin-left: 63px;
-  opacity: 1;
-}
-
-.link {
-  height: 77px;
-  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  text-transform: uppercase;
-  padding: 0 20px;
+  color: #fff;
+  font-family: "Catamaran", sans-serif;
+}
+.registration_form input {
+  width: 347px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.registration_form input::placeholder {
+  padding-left: 10px;
+  opacity: 0.7;
+  color: #333333;
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1.8px;
+}
+.registration_form span {
+  width: 317px;
+  height: 40px;
+  color: #ffffff;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  margin-bottom: 15px;
+  align-self: flex-start;
+  margin-left: 13px;
+}
+.registration_form button {
+  width: 347px;
+  height: 40px;
+  background-color: #ff6600;
+  border: 0px;
+  font-family: "Catamaran", sans-serif;
+  color: #333333;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 34px;
 }
 
-.link a {
+.sign_join {
+  width: 377px;
+  height: 58px;
+  margin-bottom: 28px;
+  display: flex;
+}
+.sign_join .but {
+  width: 190px;
+  height: 58px;
+  text-align: center;
+  line-height: 58px;
+}
+.sign_join .but a {
+  text-decoration: none;
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
   color: #ffffff;
 }
-
-.link a:hover {
-  color: #adadad;
+.sign_join .sign__but {
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+.sign_join .sign__but a {
+  color: #333333;
 }
 
-.welcome__container {
-  margin: 0 143px 124px 0;
-  flex: 0 0 auto;
-  align-self: flex-end;
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.content h1,
+.content h3 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  color: #00a8b2;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 3px;
+}
+.content p {
+  font-family: "Catamaran", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+}
+.content #text {
+  max-width: 850px;
+}
+.content h1 {
+  margin-top: 77px;
+  margin-bottom: 17px;
 }
 
-.welcome {
-  color: #fcf9f7;
-  text-transform: uppercase;
-  font-size: 72px;
+.container {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 35px 0 195px 0;
+}
+.container h3 {
+  font-size: 18px;
   letter-spacing: 1.8px;
 }
 
-.company__name {
-  color: #d7794a;
-  font-size: 48px;
+.seq {
+  max-width: 210px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+.seq:nth-child(1) img {
+  margin-bottom: 10px;
+}
+.seq:nth-child(2) img {
+  margin-bottom: 2px;
+}
+.seq:nth-child(3) img {
+  margin-bottom: 8px;
+}
+.seq:nth-child(4) img {
+  margin-bottom: 4px;
+}
+
+.footer {
+  width: 100%;
+  height: 121px;
+  background-color: #333333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo {
+  width: 160px;
+  height: 64px;
+  margin-left: 54px;
+}
+.footer .connect {
+  width: 250px;
+  height: 52px;
+  color: #ffffff;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 70px;
+}
+.footer .connect img {
+  margin-bottom: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */

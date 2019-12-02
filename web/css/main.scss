@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.head {
+    /* Style for "neonbrand-" */
+    position: relative;
+    width: 100%;
+    min-height: 669px;
+    background-image: url(../img/neonbrand-570373-unsplash.webp);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-image: linear-gradient(to top, #00f1ff 0%, #00a8b2 100%);
+        opacity: 0.7;
+        z-index: -1;
+    }
+
+}
+
+.logoContainer {
+    width: 331px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    //margin-left: 246px;
+
+
+    .logo {
+        align-self: center;
+        margin-bottom: 55px;
+    }
+
+    .undertext {
+        width: 350px;
+        height: 88px;
+        color: #333333;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 54px;
+        letter-spacing: 3.6px;
+        text-align: center;
+
+    }
+}
+
+.registration_form {
+    // Style for "allRegiste"
+    width: 377px;
+    height: 422px;
+    box-shadow: 0 6px 6px 1px rgba(44, 43, 45, 0.7);
+    background-color: #333333;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+
+    input {
+        width: 347px;
+        height: 40px;
+        margin-bottom: 15px;
+        &::placeholder {
+            padding-left: 10px;
+            opacity: 0.7;
+            color: #333333;
+            font-family: 'Catamaran', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 36px;
+            // Text style for "N, ame"
+            letter-spacing: 1.8px;
+        }
+    }
+    span {
+        // Style for "If you’re"
+        width: 317px;
+        height: 40px;
+        color: #ffffff;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        // Text style for "If you’re"
+        letter-spacing: 1.6px;
+        margin-bottom: 15px;
+        align-self: flex-start;
+        margin-left: 13px;
+    }
+    button {
+        // Style for "registerNo"
+        width: 347px;
+        height: 40px;
+        background-color: #ff6600;
+        border: 0px;
+        font-family: 'Catamaran', sans-serif;
+        color: #333333;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 34px;
+
+    }
+
+}
+.sign_join {
+    width: 377px;
+    height: 58px;
+    margin-bottom: 28px;
+    display: flex;
+    .but {
+        width: 190px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+
+        a {
+            text-decoration: none;
+            font-family: 'Catamaran', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+    }
+    .sign__but{
+        background-color: #ffffff;
+        opacity: 0.7;
+        a {color: #333333;}
+    }
+}
+
+
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h1,
+    h3 {
+        font-family: 'Catamaran', sans-serif;
+        font-weight: 900;
+        color: #00a8b2;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-family: 'Catamaran', sans-serif;
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1.6px;
+    }
+
+    #text {max-width: 850px;}
+    h1 {margin-top: 77px;
+        margin-bottom: 17px;}
+
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 35px 0 195px 0;
+
+    h3 {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+
+
+}
+
+.seq {
+    max-width: 210px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &:nth-child(1) img {
+        margin-bottom: 10px;
+    }
+
+    &:nth-child(2) img {
+        margin-bottom: 2px;
+    }
+
+    &:nth-child(3) img {
+        margin-bottom: 8px;
+    }
+
+    &:nth-child(4) img {
+        margin-bottom: 4px;
+    }
+
+}
+.footer {
+    // Style for "Rectangle"
+    width: 100%;
+    height: 121px;
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 160px;
+        height: 64px;
+        margin-left: 54px;
+
+        img {
+
+
+        }
+    }
+    .connect {
+        // Style for "Connect wi"
+        width: 250px;
+        height: 52px;
+        color: #ffffff;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        margin-right: 70px;
+
+        img {
+            margin-bottom: 2px;
+        }
+
+    }
+}
