@@ -1,0 +1,79 @@
+.container__contact-us {
+    width: 100%;
+    min-height: 1435px;
+    height: 100%;
+    background-color: $contact-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-us__text {
+        max-width: 770px;
+        width: 100%;
+        height: 190px;
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            text-align: center;
+            @include text($white_color, Athelas, 66px, uppercase, 1.2px);
+        }
+
+        .contact__text {
+            text-align: center;
+            @include text($contact-color-text, Quattrocento Sans, 28px, none, 0.5px);
+        }
+    }
+
+    .input__area {
+        max-width: 1036px;
+        width: 100%;
+        margin: 120px auto;
+
+
+        .input_fiel{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+        }
+
+        .fields_input {
+            @include field(50px, 22px, Quattrocento Sans, transparent, none, 1px solid #bfbfbf)
+        }
+
+        .field_email {
+            @include field(50px, 22px, Quattrocento Sans, transparent, none, 1px solid #bfbfbf)
+        }
+
+        .field_message {
+            min-height: 40px;
+            max-width: 1036px;
+            max-height: 250px;
+            @include field(170px, 22px, Quattrocento Sans, transparent, none, 1px solid #bfbfbf)
+        }
+        .input_fiel_sec{
+            display: grid;
+        }
+
+        .button {
+            width: 240px;
+            height: 73px;
+            color: white;
+            margin-left: auto;
+            margin-top: 75px;
+            background-color: $button-color;
+            font-size: 24px;
+            font-family: $mariad;
+            font-weight: 400;
+            border: 2px solid $button-color;
+            transition: .2s linear;
+            outline:  none;
+            float: right;
+            &:hover{
+                background-color: #89553b;
+            }
+        }
+    }
+}

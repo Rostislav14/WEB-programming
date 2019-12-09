@@ -1,0 +1,32 @@
+.bar_information {
+    margin-top: 300px;
+    text-align: center;
+    width: 100%;
+    height: 340px;
+    background: $bar-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .numbers {
+        width: 100%;
+        color: $number-color;
+        font-family: $number-font;
+        font-size: 77px;
+        font-weight: 700;
+        line-height: 38.37px;
+    }
+
+
+    .texts {
+        margin-top: 50px;
+        @include text($light_color, $mariad, 26px, uppercase, 0)
+    }
+}
+
+.container__none{
+    width: 100%;
+    height: 1103px;
+    background: url("../img/Slice_1.png") center no-repeat;
+    background-size: cover;
+}

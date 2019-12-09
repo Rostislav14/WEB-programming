@@ -1,0 +1,42 @@
+@mixin text ($color, $f-family, $f-size, $t-trans, $l-spac) {
+    color: $color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-weight: 400;
+    text-transform: $t-trans;
+    letter-spacing: $l-spac;
+}
+
+@mixin buttom {
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #88543a;
+    font-size: 19px;
+    font-family: Font Awesome;
+    color: #985336;
+    transition: .2s linear;
+    outline:  none;
+    margin: 11px 56px;
+    &:hover{
+        background: #88543a;
+        color: #bdb3af;
+        font-size: 20px;
+    }
+
+
+}
+
+@mixin field ($height, $f-size, $f-family, $bc-col, $border, $bor-bot) {
+    margin: 25px 5px;
+    height: $height;
+    font-size: $f-size;
+    font-family: $f-family;
+    background-color: $bc-col;
+    border: $border;
+    border-bottom: $bor-bot;
+    outline: none;
+    color: $white-color
+}
+

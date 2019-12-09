@@ -1,0 +1,67 @@
+.container__gallery {
+    width: 100%;
+    max-height: 1440px;
+    height: 100%;
+
+    .our_gallery__text {
+        text-align: center;
+        margin: 180px auto 0;
+        width: 100%;
+        max-width: 1508px;
+
+        h5 {
+            @include text($titels-color, Athelas, 72px, uppercase, 1.8px);
+        }
+
+        .gallery__text {
+            margin-top: 100px;
+            @include text(black, Athelas, 28px, none, 0)
+        }
+    }
+
+    .gallery__photo {
+        margin-top: 160px;
+        max-height: 770px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .photo_slider__one {
+            background: url(../img/image_part_001.jpg) center no-repeat;
+        }
+
+        .photo_slider__two {
+          background: url(../img/image_part_002.jpg) center no-repeat;
+        }
+
+        .photo_slider__three {
+          background: url(../img/image_part_003.jpg) center no-repeat;
+        }
+
+        .photo_slider__four {
+          background: url(../img/image_part_004.jpg) center no-repeat;
+        }
+
+        .photo_slider {
+            height: 770px;
+            width: 390px;
+            background-size: cover;
+            border: 3px solid white;
+        }
+    }
+
+    .under_footer {
+        width: 100%;
+        height: 77px;
+        background: #d6d6d6;
+
+        .button__slik {
+            display: flex;
+            justify-content: space-between;
+
+            .buttons{
+                @include buttom
+            }
+        }
+    }
+}

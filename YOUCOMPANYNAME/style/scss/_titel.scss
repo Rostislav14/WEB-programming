@@ -1,0 +1,73 @@
+@import "_var";
+@import "_fonts";
+@import "_mixins";
+
+.container__titel {
+    min-height: 1024px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 49px auto 54px 63px;
+    opacity: 0.71;
+    color: $main-color;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.63px;
+    font-family: $mariad;
+}
+
+
+.title {
+    width: 100%;
+    height: 100%;
+    min-height: 770px;
+    background: url(../img/IMG_4871.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .titel__bar {
+        width: 100%;
+        height: 78px;
+        background: rgba(0, 0, 0, 0.25);
+        nav {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: flex-start;
+            &:first-child{
+                margin-left: 50px;
+            }
+
+            .bar__nav {
+                color: $light-color;
+                font-size: 20px;
+                font-family: $mariad;
+                text-decoration: none;
+                height: 100%;
+                padding: 27px 20px;
+                transition: color .3s linear;
+
+                &:hover {
+                    color: black;
+                    background-color: #00b4f0a4;
+                }
+            }
+        }
+    }
+
+    .titel__text {
+        position: absolute;
+        bottom: 115px;
+        right: 145px;
+        background-color: #0026517D;
+
+        .text__welcome {
+            @include text(white, Libre Baskerville, 72px, uppercase, 0);
+        }
+
+        .text__you {
+            @include text(white, Athelas, 48px, uppercase, 8px);
+        }
+    }
+}

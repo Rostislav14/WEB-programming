@@ -1,0 +1,80 @@
+.container__team {
+    width: 100%;
+    min-height: 1642px;
+    display: flex;
+    align-items: center;
+
+    .team__content {
+        width: 100%;
+        min-height: 1179px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            @include text($titels-color, Athelas, 61px, uppercase, 0);
+            line-height: 25.46px;
+        }
+
+
+        .content__line {
+            max-width: 442px;
+            width: 100%;
+            border: 1px solid #88543a;
+            margin: 40px auto 87px;
+        }
+
+        .content__text {
+            width: 100%;
+            max-width: 1137px;
+            text-align: center;
+            @include text(black, $text-font, 31px, none, 0.9px)
+        }
+
+        .container__photo {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+
+            .team__photo {
+                max-width: 450px;
+                width: 100%;
+                height: 100%;
+                max-height: 900px;
+                margin-top: 135px;
+            }
+        }
+
+        .photo__one {
+            background: url(../img/IMG_5308.jpg);
+        }
+
+        .photo__two {
+            background: url(../img/IMG_5308.jpg);
+        }
+
+        .photo__three {
+            background: url(../img/IMG_5308.jpg);
+        }
+
+        .photo {
+            width: 100%;
+            height: 570px;
+            background-size: cover;
+
+        }
+    }
+
+    .team__name {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 55px;
+        @include text(black, $text-font, 31px, none, 0)
+    }
+
+    .team__description {
+        text-align: center;
+        @include text(black, $text-font, 20px, none, 0.6px)
+    }
+}
