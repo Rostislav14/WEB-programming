@@ -1,0 +1,30 @@
+*  {
+    margin:4px 4px;
+    padding: 20px:;
+   
+}
+#main{
+	display: flex;
+	flex-direction: row;
+
+}
+.forms {
+    display: flex;
+    justify-content: flex-start;
+   /* border: solid;*/
+}
+.buttons{
+	margin-top: 15px;
+}
+@media (min-height: 500px) and (orientation: portrait){
+	.buttons{
+		display: flex;
+		flex-direction: column;
+
+
+	}
+	.forms {
+    display: flex;
+    flex-direction: column;
+}
+}
